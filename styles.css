@@ -1,4 +1,65 @@
-h1{ 
+.header{
+    margin: 40px 20px 200px;
+    font-size: 0;
+    height: 45px;
+    padding: 8px 16px;
+    font-family: Sansita Swashed;
+}
+
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    margin-bottom: 606px;
+}
+
+.logo{
+    width: 15%;
+    text-align: left;
+    vertical-align: top;
+    cursor:pointer;
+}
+.logo > img{
+    height: 100%;
+}
+
+.navbar{
+    width:70%;
+    word-spacing: 25px;
+    text-align: center;
+    color:#025157;
+    font-weight: 500;
+    cursor:pointer;
+}
+.actions{
+    width: 15%;
+    text-align: right;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: 600;
+    cursor:pointer;
+}
+.actions a{
+    color: #67b54b;
+    margin-right: 10px;
+    cursor: default;
+}
+
+.actions button{
+    color:white;
+    background-color: #67b54b;
+    padding:12px 14px;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 10px;
+
+}
+li{
+   /*Sale lo mismo si pongo ul{display:flex}*/
+    display:inline-block;
+}
+
+h1{
     color: #025157;
     font-family: "Alegreya", serif;
     margin-bottom: 24px;
@@ -25,26 +86,31 @@ h4{
     margin-block-end: 1.33em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-} 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 h1, h4, p {
     text-align: center;
-}   
-form{ 
-    text-align: center;   
-    font-size:14px; 
 }
-   
 
-input{ 
-    border: 1px solid #b6b6b6;   
+form{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+input{
+    border: 1px solid #b6b6b6;
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
-    width: 250px;
-    height: 42px; 
-    padding: 6px 20px; 
-
-    
+    padding: 6px 20px;
+    font-size:14px;
+    height: 55px;
 }
 
 button{
@@ -52,16 +118,15 @@ button{
     color: #fff;
     border: none;
     border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px; 
+    border-bottom-right-radius: 8px;
     margin:-5px;
     cursor: pointer;
+    font-size:14px;
     height: 55px;
-    
-    
+    padding: 6px 20px;
 }
 
 p{
-  
     color: #8b8b8bcc;
     margin-top: 15px;
     margin-bottom: 1em;
@@ -75,12 +140,22 @@ p{
 }
 
 img{
-    border-style: none;  
-    display:block;
-    margin:auto;       
+    border-style: none;
+    margin: 15px 0;
 }
 
+
+.imagen img{
+    width: 70%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+
 body{
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
     background-color: #fffbf7;
     font-family: "Open Sans", sans-serif;
 }
