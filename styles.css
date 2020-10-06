@@ -1,35 +1,37 @@
 .header{
-    margin: 40px 20px 200px;
-    font-size: 0;
+    margin: 40px 20px 150px;
+    font-size: 0;/*esta propiedad es para que no haya espacio entre contenido y contenido */
     height: 45px;
     padding: 8px 16px;
-    font-family: Sansita Swashed;
+    font-family: sans-serif;
 }
 
 .header > * {
     display: inline-block;
-    font-size: 16px;
+    font-size: 16px;/*Aqui modifico la letra por que en el anterior le puse 0*/
     vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
 }
 
 .logo{
     width: 15%;
-    text-align: left;
-    vertical-align: top;
     cursor:pointer;
+
 }
+
 .logo > img{
     height: 100%;
 }
 
 .navbar{
     width:70%;
-    word-spacing: 25px;
     text-align: center;
     color:#025157;
-    font-weight: 500;
+    font-weight: 500;/*tamaño de la fuente*/
     cursor:pointer;
 }
+
 .actions{
     width: 15%;
     text-align: right;
@@ -38,6 +40,7 @@
     font-weight: 600;
     cursor:pointer;
 }
+
 .actions a{
     color: #67b54b;
     margin-right: 10px;
@@ -53,9 +56,11 @@
     margin-left: 10px;
 
 }
-li{
+.menu-item{
    /*Sale lo mismo si pongo ul{display:flex}*/
-    display:inline-block;
+    display:inline;
+    margin-left:25px;
+    margin-right: 25px;
 }
 
 h1{
