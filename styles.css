@@ -16,8 +16,6 @@
 
 .logo{
     width: 15%;
-    cursor:pointer;
-
 }
 
 .logo > img{
@@ -29,7 +27,6 @@
     text-align: center;
     color:#025157;
     font-weight: 500;/*tamaño de la fuente*/
-    cursor:pointer;
 }
 
 .actions{
@@ -38,13 +35,11 @@
     vertical-align: top;
     font-size: 14px;
     font-weight: 600;
-    cursor:pointer;
 }
 
 .actions a{
     color: #67b54b;
     margin-right: 10px;
-    cursor: default;
 }
 
 .actions button{
@@ -62,6 +57,20 @@
     margin-left:25px;
     margin-right: 25px;
 }
+
+.fixed-header {
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffbf7;
+  }
+
+/*.menu-item :hover{
+    font-size: 30px;
+    color: violet;
+    background-color: yellow;
+}*/
 
 h1{
     color: #025157;
@@ -129,6 +138,12 @@ button{
     height: 55px;
     padding: 6px 20px;
 }
+main{
+    margin-top: 285px;
+  text-align: center;
+
+}
+  
 
 p{
     color: #8b8b8bcc;
@@ -154,6 +169,35 @@ img{
     vertical-align: middle;
     border-style: none;
 }
+
+#video h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#025157;
+
+}
+
+#video article p{
+    color: #343434;
+}
+
+.flexbox{
+
+    display: flex;
+    width: 70%;
+    margin:100px auto;
+    align-items: center;
+}
+.explanatory-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .publish {
+    flex: 1;
+  }
+
 
 
 body{
