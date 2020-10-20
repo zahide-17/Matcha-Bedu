@@ -157,7 +157,7 @@ h1, h4, p {
     align-items: center;  padding-bottom:0 ;
     margin-bottom: -10px;
     width: 70%;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 .vdo {
     margin: 80px 0 0;
@@ -168,12 +168,10 @@ h1, h4, p {
     margin: 0;
     padding: 0;
 }
-
 .vdo figure img {
     width: 120px;
     margin-top: -30px;
 }
-
 .publish {
     padding: 0;
     margin:0 15px;
@@ -199,7 +197,7 @@ h1, h4, p {
     .flexbox {
         flex-direction: column;
         width: 90%;
-        margin: 0 auto;
+        margin: 30px auto;
         padding: 0;
     }
     .vdo {
@@ -213,11 +211,11 @@ h1, h4, p {
         margin:0 auto;
         width: 100%;
     }
-    .publish  h3 {
+    .publish h3 {
         font-size: 25px;
         line-height: 25px;
     }
-    .publish form  div {
+    .publish form div {
         height: 50px;
     }
     .publish form div input{
@@ -232,8 +230,7 @@ h1, h4, p {
     grid-template-rows: 1fr 1fr;
     grid-gap: 5%;
     background-color: #025157;
-    padding: 10% 15%;
-    margin: 10% 0 0;
+    padding: 70px 150px;
 }
 .bloque1 {
    display: flex;
@@ -269,7 +266,6 @@ h1, h4, p {
     margin:0;
     padding:0;
 }
-
 .img-grid {
     flex:.90;
     text-align: right;
@@ -278,7 +274,7 @@ h1, h4, p {
 }
 .img-grid img {
    position: absolute;
-   left: 477px;
+   left: 474px;
    clip: rect(0px,150px,400px,0px);
 }
 .img-grid1 {
@@ -289,7 +285,7 @@ h1, h4, p {
 }
 .img-grid1 img {
     position: absolute;
-    left: 950px;
+    left: 987px;
     clip: rect(0px,150px,450px,0);
  }
  .img-grid2 {
@@ -300,7 +296,7 @@ h1, h4, p {
 }
 .img-grid2 img {
     position: absolute;
-    left:475px;
+    left:473px;
     clip: rect(0px,150px,450px,0);
  }
  .img-grid3 {
@@ -311,25 +307,26 @@ h1, h4, p {
 }
 .img-grid3 img {
     position: absolute;
-    left:950px;
+    left:987px;
     clip: rect(0px,150px,450px,0);
 }
 @media (max-width: 575px) {
     .usarGrid{
         border:2px solid purple;
-        grid-template-rows:repeat(4, 1fr);
         grid-template-columns: 1fr;
-        padding: 5%;
+        grid-template-rows:repeat(4, 1fr);
         text-align: left;
-    }
-    .bloque1{
-        margin: auto;
+        padding:30px 20px 200px 20px;
+        margin: 0;
     }
     .img-grid,
     .img-grid1,
     .img-grid2,
     .img-grid3{
         display: none;
+    }
+    .flexhija2 button{
+        margin-left: 30px;
     }
 }
 
@@ -411,6 +408,56 @@ h1, h4, p {
     border: none;
     width: 80%;
 }
+@media (max-width: 575px){
+    .postwork {
+        margin-top: 0;
+        flex-direction: column;
+        text-align:justify;
+    }
+    .flexhija1,
+    .flexhija2 {
+        padding: 0;
+        margin: 0;
+    }
+    .flexhija1 h1 {
+        font-size: 26px;
+        padding-left: 10px;
+    }
+    .flexhija1 {
+        padding: 0 15px;
+        text-align:justify;
+    }
+    .flexhija1 button {
+        margin-left: 15px;
+    }
+    .flexhija1 img {
+        width:90%;
+        margin: 10px 15px ;
+        text-align: center;
+    }
+    .flexhija2 {
+        margin: 20px;
+        padding-bottom: 20px;
+    }
+    .flexhija2 img {
+        width: 100%;
+        height: 50%;
+        margin-top: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius:10px;
+    }
+    .flexhija2 p {
+        font-size: 20px;
+        margin: 0;
+    }
+    .flexhija2 h5 {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .flexhija2 button {
+        margin-top: 0;
+    }
+}
 /*****************************************/
 /*Cuarto postword segundo grid del documento */
 
@@ -437,7 +484,7 @@ h1, h4, p {
     grid-template-rows: 1fr ;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
-    margin: 70px 140px 100px 90px;
+    margin: 70px 150px 90px;
 }
 .grid-item1 {
     border: 1px solid lightgrey;
@@ -467,6 +514,26 @@ h1, h4, p {
     font-size:.55em ;
     text-decoration: none;
     margin: 20px 0;
+}
+@media (max-width: 575px) {
+    .textgrid h1 {
+        font-size: 27px;
+    }
+    .textgrid p {
+        padding:0 25px;
+    }
+    .textgrid button {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .seg-grid {
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(4,1fr);
+       margin: 20px;
+    }
+    .grid-item1 {
+        translate: 30;
+    }
 }
 /*********************************/
 body {
