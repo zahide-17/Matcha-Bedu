@@ -1,12 +1,19 @@
-/*Seccion nav*/
-.navbar {
-    text-align: center;
-    color:#025157;
-    font-weight: 500;
-    /*tamaño de la fuente*/
-}
+@import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
 
-.navbar ul {
+.navbar {
+    background-color: #fffbf7;
+  }
+  .navbar-light .nav-item .nav-link {
+      font-size: .6em;
+      color:#025157;
+  }
+  .navbar-light .navbar-toggler {
+      border-color: #025157;
+  }
+  .navbar-light .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+/*.navbar ul {
     display:flex;
     justify-content: center;
 }
@@ -16,7 +23,7 @@
     padding-top:20px ;
     padding-left:6px;
     padding-right:6px;
-}
+}*/
 
 .actions {
     text-align: right;
@@ -37,6 +44,7 @@
     border: 0;
     margin-left: 10px;
 }
+
 @media (max-width: 575px){
 
     h1{
@@ -44,86 +52,78 @@
     }
     .navbar-light .nav-item .nav-link {
         color: #025157;
-      }
-      
+    }
       .navbar-light .navbar-toggler {
         border-color: #025157;
       }
-      
+
       .navbar-light .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
       }
 }
-
-/*********************************************/
 /*Seccion main*/
 main {
-  margin-top: 250px;
-  text-align: center;
-}
-
-h1 {
-    display: block;
-    font-family: "Alegreya", serif;
-    color: #025157;
-    margin: 0.67em 0 0 0.67em;
-}
-
-h4 {
-    display: block;
-    font-family: "Slabo 27px", serif;
-    font-size: 20px;
-    color: #46484c;
-    font-weight: 500;/*Peso de fuente*/
-    margin:1.33em 0;
-}
-
-form {
+    margin-top: 250px;
     text-align: center;
-    box-sizing: border-box;
-    /*nos permite incluir el relleno y el borde en el
-    ancho y alto total de un elemento.*/
-}
+  }
+  h1 {
+      display: block;
+      font-family: "Alegreya", serif;
+      color: #025157;
+      margin: 0.67em 0 0 0.67em;
+  }
+  h4 {
+      display: block;
+      font-family: "Slabo 27px", serif;
+      font-size: 20px;
+      color: #46484c;
+      font-weight: 500;/*Peso de fuente*/
+      margin:1.33em 0;
+  }
+  form {
+      text-align: center;
+      box-sizing: border-box;
+      /*nos permite incluir el relleno y el borde en el
+      ancho y alto total de un elemento.*/
+  }
+  input {
+      border: 1px solid #b6b6b6;
+      border-bottom-left-radius: 8px;
+      border-top-left-radius: 8px;
+      padding: 6px 20px;
+      font-size:14px;
+      height: 55px;
+  }
+  button {
+      background-color: #025157;
+      font-size:14px;
+      color: #fff;
+      border:none;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      margin:-10px;
+      cursor: pointer;
+      padding: 6px 20px;
+      height: 55px;
+  }
+  img {
+      border-style: none;
+      margin: 15px 0;
+  }
+  p {
+      color:#b6b6b6;
+      font-size: 0.55em;
+      margin: 15px 0;
+  }
+  .imag img {
+      width: 70%;
+      vertical-align: middle;
+      border-style: none;
+  }
+  h1, h4, p {
+      text-align: center;
+  }
 
-input {
-    border: 1px solid #b6b6b6;
-    border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px;
-    padding: 6px 20px;
-    font-size:14px;
-    height: 55px;
-}
-
-button {
-    background-color: #025157;
-    font-size:14px;
-    color: #fff;
-    border:none;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    margin:-10px;
-    cursor: pointer;
-    padding: 6px 20px;
-    height: 55px;
-}
-img {
-    border-style: none;
-    margin: 15px 0;
-}
-p {
-    color:#b6b6b6;
-    font-size: 0.55em;
-    margin: 15px 0;
-}
-
-.imag img {
-    width: 70%;
-    vertical-align: middle;
-    border-style: none;
-}
-h1, h4, p {
-    text-align: center;
-}
 
 @media (max-width:575px){
     main{
