@@ -558,6 +558,17 @@ main {
         transform: rotate(90deg);
     }
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.process .process-icon img {
+    height: 100%;
+}
 /*********************************/
 body {
     font-family: "Open Sans", sans-serif;
